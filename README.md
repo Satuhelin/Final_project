@@ -18,7 +18,7 @@ Shows positive vs negative vs neutral visits‘
 Trump does not like to travel outside the U.S.
 ….and this is how it shows
 
-<h2> Trump has visited 17 foreign countries (map with date if visit)
+Trump has visited 17 foreign countries (map with date if visit)
 
 That is less than his predecessors 
 
