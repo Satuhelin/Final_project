@@ -4,9 +4,9 @@ import d3Tip from 'd3-tip'
 
 d3.tip = d3Tip
 
-const margin = { top: 25, left: 25, right: 25, bottom: 25 }
+const margin = { top: 0, left: 0, right: 0, bottom: 0 }
 const height = 600 - margin.top - margin.bottom
-const width = 800 - margin.left - margin.right
+const width = 700 - margin.left - margin.right
 
 const svg = d3
   .select('#chart-1')
@@ -122,18 +122,15 @@ function ready([json, datapoints]) {
     .append('circle')
     .attr('class', 'rallies')
     .attr('r', 4)
-    // .attr('opacity', 0.5)
     .attr('transform', d => {
       const coords = projection([d.lng, d.lat])
       return `translate(${coords})`
     })
-    // .style('fill', d => colorScale(d.Rating))
     .style('fill', 'black')
     .on('mouseover', function (d) {
       tip.show.call(this, d)
       console.log(d3.event)
-      d3.select(".d3-tip-scrolly")
-        .style('top', d3.event.pageY + 10 + "px")
+      d3.select('.d3-tip-scrolly').style('top', d3.event.pageY + 10 + 'px')
     })
     .on('mouseout', tip.hide)
 
@@ -142,7 +139,7 @@ function ready([json, datapoints]) {
     svg.selectAll('.rallies').style('fill', 'black')
   })
 
-  d3.select('#popularity-step').on('stepin', function () {
+  d3.select('#pop-step').on('stepin', function() {
     console.log('popularity is here')
     svg
       .selectAll('.rallies')

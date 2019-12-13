@@ -1,12 +1,16 @@
-<div class="story-body scrollytelling">
+<div class="story-body">
     <h2>Making America Great Again</h2>
-    {{!-- <p>I have the <code>script</code> tag that points to <code>chart-01.js</code> inside of this partial</p> --}}
+    <p>Trump rallies since he's taken office.</p>
+</div>
+
+
+<div class="story-body scrollytelling">
     <div id="chart-1" class="chart"></div>
     <div class="steps">
         <div class='step' id='reset-step'>
             From February 2017 to November 2019, President Trump has held 72 MAGA rallies across the U.S.
         </div>
-        <div class='step' id='popularity-step'>
+        <div class='step' id='pop-step'>
             <p>According to data obtained from Morning Consult, President Trump prefers to visit states where he's popular.
             He's held rallies in 44 states that viewed him <span class='colored-text label_pos'>positively</span> at the time of his visit, versus 25 that viewed him <span class='colored-text label_neg'>negatively.</span>
             </p>
@@ -14,39 +18,60 @@
     </div>
 </div>
 
-
 <script src="scripts/chart-01.js"></script>
 
 <div class="story-body">
-    <h2>Bar chart -- States visited the most</h2>
-    <p>I have the <code>script</code> tag that points to <code>chart-02.js</code> inside of this partial</p>
+    {{!-- <h2>Regions he's visited the most</h2> --}}
+    <p>Based on where he's held rallies, it seems Trump feels most comfortable in the Southern U.S. He's held the fewest rallies in his home region of the Northeast.</p>
     {{!-- <div id="chart-2"></div> --}}
-    <iframe title="Southern Comfort" aria-label="Bar Chart" id="datawrapper-chart-4oX1d"
-        src="//datawrapper.dwcdn.net/4oX1d/1/" scrolling="no" frameborder="0"
-        style="width: 0; min-width: 100% !important; border: none;" height="193"></iframe>
+<iframe title="Southern Comfort" aria-label="Bar Chart" id="datawrapper-chart-4oX1d" src="//datawrapper.dwcdn.net/4oX1d/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="193"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
     <script
         type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
 
 </div>
 
+<div class="story-body">
+    {{!-- <h2>Trump spends the least time abroad</h2> --}}
+    <p> President Trump has held more rallies in the U.S. than his recent predecesors George W. Bush and Barack Obama. 
+    But after 34 months in office, he has spent less time abroad than previous presidents in the same amount of time. He not only went on a fewer number of trips, but spent less days away from the U.S. </p>
+    <iframe title="Sleeping at Home" aria-label="Bar Chart" id="datawrapper-chart-RQzQi" src="//datawrapper.dwcdn.net/RQzQi/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="186"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+</div>
 
 <div class="story-body">
-    <h2>Trump visits abroad map</h2>
-    <p>I have the <code>script</code> tag that points to <code>chart-03.js</code> inside of this partial</p>
-    <div id="chart-3"></div>
+ <h2>Trump Avoids Key Western Allies</h2>
+     <p>When he does go abroad, Trump has frequently traveled to East Asia but has avoided some key western allies
+         According to Pew Research, Trump has generally been viewed negatively outside the U.S. During his administration, he has visited many countries where he is liked, such as Israel and Vietnam. </p>
+  
+</div>
+
+
+<div class="story-body scrollytelling">    
+     <div id="chart-3" class="chart">
+    </div>
+    
+    <div class="steps">
+        <div class="step" id="first-step">
+            <p>President Trump has held bilateral meetings in 10 different countries since he took office.</p>
+        </div>
+
+    <div class="steps">
+        <div class="step" id="popularity-step">
+            <p>Trump is unpopular almost everywhere in Europe. Of the places he has traveled, his popularity was highest in Eastern Asia and Israel. Countries in green have no data on popularity.</p>
+        </div>
+    <div class="step" id="nogo-step">
+            <p>Normally, U.S. presidents hold bilateral meetings in Germany, Canada and Mexico. So far, Trump has not visited any of those countries. 
+                In Germany, his popularity rate was 9, in Mexico it was 6 and in Canada it was 22 in 2018, the most recent data available.</p>
+    </div>
+ </div></div>
+    </div>
 </div>
 
 <script src="scripts/chart-03.js"></script>
+<link rel="stylesheet" href="styles/scrolly.css"></link>
+<script src="scripts/scrollytelling.js"></script>
 
 <div class="story-body">
-    <h2>This is how many days Bush, Obama and Trump spent abroad </h2>
-    <p>I have the <code>script</code> tag that points to <code>chart-04.js</code> inside of this partial</p>
-<iframe title="During the first 2,5 years in the office, Trump has traveled the least" aria-label="Bar Chart" id="datawrapper-chart-RQzQi" src="//datawrapper.dwcdn.net/RQzQi/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="186"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div>
-
-<div class="story-body">
-    <h2>Line Chart -- International visits of Bush, Obama and Trump</h2>
-    <p>I have the <code>script</code> tag that points to <code>chart-05.js</code> inside of this partial</p>
-    <div id="chart-5"></div>
+    <p>Trump is not totally different from his predecessors when it comes to traveling. Like them, he did the biggest bulk of his traveling during his first year in  office. After that, the phase has slowed down.</p>
+<iframe title="So Far, Trump Travels The Least " aria-label="Interactive line chart" id="datawrapper-chart-hfT3C" src="//datawrapper.dwcdn.net/hfT3C/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 </div>
-
 <script src="scripts/chart-05.js"></script>
